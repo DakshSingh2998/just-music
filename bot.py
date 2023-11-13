@@ -15,7 +15,9 @@ from datetime import datetime
 ctx_save={'d':'d'}
 #temp_ctx=None
 #auto_now=0
-client=commands.Bot(command_prefix=';', intents = discord.Intents.all())
+intents = discord.Intents.default()
+intents.messages = True
+client=commands.Bot(command_prefix=';', intents = intents)
 status=""
 daksh_yt="https://www.youtube.com/channel/UCEL4AUYHQnq2RJivLg_NoQw"
 @client.event
