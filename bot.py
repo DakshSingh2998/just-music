@@ -9,7 +9,7 @@ from discord.ext import commands, tasks
 import ctypes
 import tracemalloc
 import gc
-import psutil
+#import psutil
 import time
 from datetime import datetime
 ctx_save={'d':'d'}
@@ -1484,13 +1484,17 @@ async def changepresence(ctx,message):
   await ctx.send('Daksh! Status Changed')
 async def showram(ctx):
   try:
+    pass
+    """
     process = psutil.Process(os.getpid())
     #print('mem ',process.memory_info().rss/1024**2)
     mem=process.memory_info().rss/1024**2
     mem='mem '+str(mem)+" "
-    cpu=psutil.cpu_percent()
+    #cpu=psutil.cpu_percent()
+    cpu = 0
     mem=mem+str(cpu)
     await ctx.send(str(mem))
+    """
   except Exception as e:
     pass
   pass
