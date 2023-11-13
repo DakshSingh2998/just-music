@@ -3,6 +3,6 @@ async_timeout
 discord
 Flask
 PyNaCl
-youtube-dl
 ffmpeg
 boto3
+git+http://github.com/ytdl-org/youtube-dl.git@00ef748cc0e35ee60efd0f7a00e373ab8d1af86b
