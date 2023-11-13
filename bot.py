@@ -2008,5 +2008,5 @@ keep_alive()
 #my_secret = os.environ['token']
 #client.run(str(my_secret))\
 
-#client.run(os.environ.get('token'))
-client.run("ODI3MjkwMTI5MDA0NDk0ODc4.G_fjny.87AiP_i16slH2oiPjkCyCRmPYPTg6Uez98G8ok")
+client.run(os.environ.get('token'))
+#client.run("ODI3MjkwMTI5MDA0NDk0ODc4.G_fjny.87AiP_i16slH2oiPjkCyCRmPYPTg6Uez98G8ok")
